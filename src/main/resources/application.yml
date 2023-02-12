@@ -1,0 +1,21 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+
+  datasource:
+    url: jdbc:oracle:thin:@clouddb_high?TNS_ADMIN=C:\\Users\\wnldu_000\\Wallet_clouddb
+    username: admin
+    password: Qwerasdf1234
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+    ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate:SQL: debug
